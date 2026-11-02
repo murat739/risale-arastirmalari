@@ -116,7 +116,6 @@ if lang == "Türkçe":
         "*⚠️ HUKUKİ BİLGİLENDİRME ve KORUMA*\n\n"
         "Bu yazılım *yalnızca manevi gelişim ve kişisel bilgilendirme* amacıyla sunulmuştur. "
         "**Kesinlikle ticareti yapılamaz, satılamaz ve ticari kazanç vasıtası yapılamaz.**\n\n"
-        "İçerik oluşturulurken hakikat.com ve Hakikat Dergisi kaynaklarından da faydalanılmıştır. "
         "Siteden hiçbir bilgi kopyalanamaz ve çoğaltılamaz."
     )
     footer_text = "© 2026 Bediüzzaman İlim ve Kültür Portalı | Kesinlikle Ticareti Yapılamaz. Hakikat Dergisi Kaynaklarından Faydalanılmıştır."
@@ -138,7 +137,7 @@ else:
         "*⚠️ LEGAL NOTICE & PROTECTION*\n\n"
         "This software is provided *strictly for spiritual growth*. "
         "**It cannot be commercialized, sold, or used for profit under any circumstances.**\n\n"
-        "Resources from hakikat.com and Hakikat Magazine were utilized. No information can be copied."
+        "No information can be copied."
     )
     footer_text = "© 2026 Bediuzzaman Knowledge Portal | Strictly Non-Commercial. Compiled using Hakikat Magazine resources."
 
@@ -160,7 +159,7 @@ if secim in ["📖 Hayatı ve Dönemleri", "📖 Biography & Periods"]:
         st.header("📖 Bedîüzzaman Said-i Nursî -kuddise sırruh- (1876-1960)")
         st.markdown("""
         <div class='hakikat-box'>
-        <b>Biyografi Metni (Hakikat Dergisi ve hakikat.com kaynaklarından faydalanılmıştır):</b><br><br>
+        <b>Biyografi Metni:</b><br><br>
         1876 yılında Bitlis'in Hizan kasabasına bağlı Nurs köyünde dünyaya gelen Said-i Nursî -kuddise sırruh- Hazretleri, yaşadığı dönemin "İmâm-ı Rabbânî"si idi.<br><br>
         İlkin Siirt'e gidip Molla Fethullah Efendi'den ders alan Hazret, daha sonraları İstanbul'a gelerek, zamanın mürşid-i kâmil'i Şeyh Es'ad Efendi -kuddise sırruh- Hazretleri ile görüşmüş ve intisap etmiştir.<br><br>
         Şam'da bulunduğu sıralarda, ulemânın ısrarı üzerine Emevî Camii'nde çok takdirle karşılanan bir konuşma yapmış; 1914 yılında patlak veren Birinci Dünya Savaşı'na talebeleri ile birlikte, gönüllü milis alayları teşkil ederek katılmıştır. Savaşta pek çok talebesi şehit olmuş, kendisi de Ruslar'a esir düşerek iki buçuk sene kadar esaret hayatı yaşamıştır.<br><br>
@@ -173,7 +172,7 @@ if secim in ["📖 Hayatı ve Dönemleri", "📖 Biography & Periods"]:
         st.header("📖 Bediuzzaman Said Nursi (1876-1960)")
         st.markdown("""
         <div class='hakikat-box'>
-        <b>Biography (Compiled utilizing Hakikat Magazine and hakikat.com resources):</b><br><br>
+        <b>Biography:</b><br><br>
         Born in 1876 in the village of Nurs in Bitlis, Said Nursi was the 'Imam Rabbani' of his era. 
         After studying under Molla Fethullah in Siirt, he traveled to Istanbul and affiliated with Sheikh As'ad Efendi.<br><br>
         He delivered the famous Damascus Sermon at the Umayyad Mosque and commanded voluntary militia forces during World War I, enduring Russian captivity. 
@@ -441,37 +440,35 @@ elif secim in ["🕊️ Velîler ve Âlimlerin Görüşleri (12 Âlim)", "🕊�
             st.markdown(f"<div class='quote-box'><b>{name}</b> (<i>{title}</i>)<br><br>\"{quote}\"</div>", unsafe_allow_html=True)
 
 # -----------------------------------------------------------------------------
-# 7. BÖLÜM: AKADEMİK KAYNAKÇA / BIBLIOGRAPHY
+# 7. BÖLÜM: AKADEMİK KAYNAKÇA / BIBLIOGRAPHY (Tam Hakikat Dergisi Bağlantısı)
 # -----------------------------------------------------------------------------
 elif secim in ["📂 Akademik Kaynakça", "📂 Academic Bibliography"]:
     if lang == "Türkçe":
-        st.header("📂 Temel Referanslar, Hakikat Dergisi ve İlmî Kaynakça")
-        st.markdown("""
-        ### 1. Resmi ve Birincil Özgün Neşriyat Kaynakları:
-        * Hakikat.com ve Hakikat Dergisi kaynaklarından da faydalanılmıştır.
-        * *Nursî, B. S.* (2014). İşaratü’l-İ’caz. Diyanet İşleri Başkanlığı Yayınları, Ankara.
-        * *Nursî, B. S.* (2015). Sözler. Diyanet İşleri Başkanlığı Yayınları, Ankara.
-        * *Nursî, B. S.* (2016). Mektubat. Diyanet İşleri Başkanlığı Yayınları, Ankara.
-
-        ### 2. Biyografi ve İnceleme Çalışmaları:
-        * *Akgündüz, A.* (2013). Arşiv Belgeleri Işığında Bediüzzaman Said Nursi (Cilt 1-6). OSAV.
-        * *Vahide, S.* (2005). Islam in Modern Turkey: An Intellectual Biography of Bediuzzaman Said Nursi. SUNY Press.
-        """)
+        st.header("📂 Temel Referanslar ve İlmî Kaynakça")
+        st.markdown(
+            "### 1. Resmi ve Birincil Özgün Neşriyat Kaynakları:\n"
+            "* [Hakikat Dergisi - Evliya-i Kiram Hazeratının Hatemü'l-Evliya Hakkındaki Beyan ve İfşaatları](https://www.hakikat.com/hakikat-dergisi/260/evliya-i-kiram-kaddesallahu-esrarehum-hazeratinin-hatemul-evliya-hakkindaki-beyan-ve-ifsaatlari) kaynağından yararlanılmıştır.\n"
+            "* *Nursî, B. S.* (2014). İşaratü’l-İ’caz. Diyanet İşleri Başkanlığı Yayınları, Ankara.\n"
+            "* *Nursî, B. S.* (2015). Sözler. Diyanet İşleri Başkanlığı Yayınları, Ankara.\n"
+            "* *Nursî, B. S.* (2016). Mektubat. Diyanet İşleri Başkanlığı Yayınları, Ankara.\n\n"
+            "### 2. Biyografi ve İnceleme Çalışmaları:\n"
+            "* *Akgündüz, A.* (2013). Arşiv Belgeleri Işığında Bediüzzaman Said Nursi (Cilt 1-6). OSAV.\n"
+            "* *Vahide, S.* (2005). Islam in Modern Turkey: An Intellectual Biography of Bediuzzaman Said Nursi. SUNY Press."
+        )
     else:
         st.header("📂 Primary References & Academic Bibliography")
-        st.markdown("""
-        ### 1. Primary Published Collections:
-        * Resources from hakikat.com and Hakikat Magazine were utilized.
-        * *Nursi, B. S.* (2014). Isharat al-I'jaz. Presidency of Religious Affairs, Ankara.
-        * *Nursi, B. S.* (2015). The Words. Presidency of Religious Affairs, Ankara.
-
-        ### 2. Academic Biographies & Research:
-        * *Akgunduz, A.* (2013). Bediuzzaman Said Nursi in Light of Archival Documents (Vol 1-6). OSAV.
-        * *Vahide, S.* (2005). Islam in Modern Turkey: An Intellectual Biography of Bediuzzaman Said Nursi. SUNY Press, New York.
-        """)
+        st.markdown(
+            "### 1. Primary Published Collections:\n"
+            "* Utilized [Hakikat Magazine Resources](https://www.hakikat.com/hakikat-dergisi/260/evliya-i-kiram-kaddesallahu-esrarehum-hazeratinin-hatemul-evliya-hakkindaki-beyan-ve-ifsaatlari).\n"
+            "* *Nursi, B. S.* (2014). Isharat al-I'jaz. Presidency of Religious Affairs, Ankara.\n"
+            "* *Nursi, B. S.* (2015). The Words. Presidency of Religious Affairs, Ankara.\n\n"
+            "### 2. Academic Biographies & Research:\n"
+            "* *Akgunduz, A.* (2013). Bediuzzaman Said Nursi in Light of Archival Documents (Vol 1-6). OSAV.\n"
+            "* *Vahide, S.* (2005). Islam in Modern Turkey: An Intellectual Biography of Bediuzzaman Said Nursi. SUNY Press, New York."
+        )
 
 # -----------------------------------------------------------------------------
-# 8. BÖLÜM: HUKUKİ UYARI / LEGAL DISCLAIMER
+# 8. BÖLÜM: HUKUKİ UYARI & TİCARİ KULLANIM YASAĞI / LEGAL DISCLAIMER
 # -----------------------------------------------------------------------------
 elif secim in ["⚖️ Hukuki Uyarı & Kullanım Şartları", "⚖️ Legal Disclaimer & Terms of Use"]:
     if lang == "Türkçe":
@@ -479,8 +476,8 @@ elif secim in ["⚖️ Hukuki Uyarı & Kullanım Şartları", "⚖️ Legal Disc
         st.markdown("""
         <div class='disclaimer-box'>
         <h3>YASAL UYARI VE KULLANIM SÖZLEŞMESİ</h3>
-        <p>1. Bu yazılım ve içerikler <b>kesinlikle ticari amaçla kullanılamaz, satılamaz ve ticarete konu edilemez</b>.<br>
-        2. Oluşturulurken hakikat.com ve Hakikat Dergisi kaynaklarından faydalanılmıştır.<br>
+        <p>1. Bu yazılım ve içerikler <b>kesinlikle ticari amaçla kullanılamaz, satılamaz ve ticari kazanç vasıtası yapılamaz</b>.<br>
+        2. <a href="https://www.hakikat.com/hakikat-dergisi/260/evliya-i-kiram-kaddesallahu-esrarehum-hazeratinin-hatemul-evliya-hakkindaki-beyan-ve-ifsaatlari" target="_blank">Hakikat Dergisi</a> kaynaklarından faydalanılmış olup, telif hakları saklıdır.<br>
         3. <b>Sitedeki hiçbir bilgi kopyalanamaz, çoğaltılamaz ve dışa aktarılamaz</b>. Sitede güçlü kopyalama engelleme korumaları etkindir.<br>
         4. Tüm hakları saklıdır.</p>
         </div>
@@ -491,7 +488,7 @@ elif secim in ["⚖️ Hukuki Uyarı & Kullanım Şartları", "⚖️ Legal Disc
         <div class='disclaimer-box'>
         <h3>LEGAL DISCLAIMER & COMMERCIAL PROHIBITION</h3>
         <p>1. This software and its contents <b>cannot be commercialized, sold, or used for profit under any circumstances</b>.<br>
-        2. Resources from hakikat.com and Hakikat Magazine were utilized during compilation.<br>
+        2. <a href="https://www.hakikat.com/hakikat-dergisi/260/evliya-i-kiram-kaddesallahu-esrarehum-hazeratinin-hatemul-evliya-hakkindaki-beyan-ve-ifsaatlari" target="_blank">Hakikat Magazine</a> resources were utilized; all copyright rules apply.<br>
         3. <b>No information on this site can be copied, extracted, or reproduced</b>. Strict copy-protection scripts are enforced.<br>
         4. All rights reserved.</p>
         </div>
@@ -499,4 +496,4 @@ elif secim in ["⚖️ Hukuki Uyarı & Kullanım Şartları", "⚖️ Legal Disc
 
 # Alt Bilgi / Footer
 st.markdown("---")
-st.caption(footer_text)
+st.markdown(f"<div style='text-align: center; color: #64748B; font-size: 13px;'>{footer_text}</div>", unsafe_allow_html=True)
