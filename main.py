@@ -43,7 +43,7 @@ st.markdown("""
         margin-bottom: 15px;
         border-radius: 5px;
     }
-    .hakikat-box {
+    .hakikat-bilgi-box {
         background-color: #F8FAFC;
         border-left: 5px solid #475569;
         padding: 20px;
@@ -118,7 +118,7 @@ if lang == "Türkçe":
         "**Kesinlikle ticareti yapılamaz, satılamaz ve ticari kazanç vasıtası yapılamaz.**\n\n"
         "Siteden hiçbir bilgi kopyalanamaz ve çoğaltılamaz."
     )
-    footer_text = "© 2026 Bediüzzaman İlim ve Kültür Portalı | Kesinlikle Ticareti Yapılamaz. Hakikat Dergisi Kaynaklarından Faydalanılmıştır."
+    footer_text = "© 2026 Bediüzzaman İlim ve Kültür Portalı | Kesinlikle Ticareti Yapılamaz."
 else:
     title_text = "📚 Bediuzzaman Said Nursi Risale-i Nur & Biography Portal"
     caption_text = "Complete Risale-i Nur Collection, Verses, Hadiths, Scholar Views, 12 Pillars, and Strictly Non-Commercial"
@@ -139,7 +139,7 @@ else:
         "**It cannot be commercialized, sold, or used for profit under any circumstances.**\n\n"
         "No information can be copied."
     )
-    footer_text = "© 2026 Bediuzzaman Knowledge Portal | Strictly Non-Commercial. Compiled using Hakikat Magazine resources."
+    footer_text = "© 2026 Bediuzzaman Knowledge Portal | Strictly Non-Commercial."
 
 # Başlık / Title Header
 st.markdown(f"<div class='main-title'>{title_text}</div>", unsafe_allow_html=True)
@@ -158,7 +158,7 @@ if secim in ["📖 Hayatı ve Dönemleri", "📖 Biography & Periods"]:
     if lang == "Türkçe":
         st.header("📖 Bedîüzzaman Said-i Nursî -kuddise sırruh- (1876-1960)")
         st.markdown("""
-        <div class='hakikat-box'>
+        <div class='hakikat-bilgi-box'>
         <b>Biyografi Metni:</b><br><br>
         1876 yılında Bitlis'in Hizan kasabasına bağlı Nurs köyünde dünyaya gelen Said-i Nursî -kuddise sırruh- Hazretleri, yaşadığı dönemin "İmâm-ı Rabbânî"si idi.<br><br>
         İlkin Siirt'e gidip Molla Fethullah Efendi'den ders alan Hazret, daha sonraları İstanbul'a gelerek, zamanın mürşid-i kâmil'i Şeyh Es'ad Efendi -kuddise sırruh- Hazretleri ile görüşmüş ve intisap etmiştir.<br><br>
@@ -171,7 +171,7 @@ if secim in ["📖 Hayatı ve Dönemleri", "📖 Biography & Periods"]:
     else:
         st.header("📖 Bediuzzaman Said Nursi (1876-1960)")
         st.markdown("""
-        <div class='hakikat-box'>
+        <div class='hakikat-bilgi-box'>
         <b>Biography:</b><br><br>
         Born in 1876 in the village of Nurs in Bitlis, Said Nursi was the 'Imam Rabbani' of his era. 
         After studying under Molla Fethullah in Siirt, he traveled to Istanbul and affiliated with Sheikh As'ad Efendi.<br><br>
@@ -313,7 +313,7 @@ elif secim in ["🕋 Eserlerde Geçen Âyetler (12 Âyet)", "🕋 Quranic Verses
         for ref, ar, tr_tr, r_ref, exp in a_data:
             st.markdown(f"""
                 <div class='quote-box'>
-                    <b>{ref}</b> <span class='source-tag'>📍 {r_ref}</span><br><br>
+                    <b>{ref}</b> <span class='source-tag'>&#128205; {r_ref}</span><br><br>
                     <div class='arabic-text'>{ar}</div><br>
                     <b>Meâl / Translation:</b> <i>"{tr_tr}"</i><br><br>
                     <b>Açıklama / Explanation:</b> {exp}
@@ -338,7 +338,7 @@ elif secim in ["🕋 Eserlerde Geçen Âyetler (12 Âyet)", "🕋 Quranic Verses
         for ref, ar, tr_en, r_ref, exp in a_data:
             st.markdown(f"""
                 <div class='quote-box'>
-                    <b>{ref}</b> <span class='source-tag'>📍 {r_ref}</span><br><br>
+                    <b>{ref}</b> <span class='source-tag'>&#128205; {r_ref}</span><br><br>
                     <div class='arabic-text'>{ar}</div><br>
                     <b>Text / Translation:</b> <i>"{tr_en}"</i><br><br>
                     <b>Explanation:</b> {exp}
@@ -440,14 +440,14 @@ elif secim in ["🕊️ Velîler ve Âlimlerin Görüşleri (12 Âlim)", "🕊�
             st.markdown(f"<div class='quote-box'><b>{name}</b> (<i>{title}</i>)<br><br>\"{quote}\"</div>", unsafe_allow_html=True)
 
 # -----------------------------------------------------------------------------
-# 7. BÖLÜM: AKADEMİK KAYNAKÇA / BIBLIOGRAPHY (Tam Hakikat Dergisi Bağlantısı)
+# 7. BÖLÜM: AKADEMİK KAYNAKÇA / BIBLIOGRAPHY
 # -----------------------------------------------------------------------------
 elif secim in ["📂 Akademik Kaynakça", "📂 Academic Bibliography"]:
     if lang == "Türkçe":
         st.header("📂 Temel Referanslar ve İlmî Kaynakça")
         st.markdown(
             "### 1. Resmi ve Birincil Özgün Neşriyat Kaynakları:\n"
-            "* [Hakikat Dergisi - Evliya-i Kiram Hazeratının Hatemü'l-Evliya Hakkındaki Beyan ve İfşaatları](https://www.hakikat.com/hakikat-dergisi/260/evliya-i-kiram-kaddesallahu-esrarehum-hazeratinin-hatemul-evliya-hakkindaki-beyan-ve-ifsaatlari) kaynağından yararlanılmıştır.\n"
+            "* [Hakikat Dergisi - Evliya-i Kiram Hazeratının Hatemü'l-Evliya Hakkındaki Beyan ve İfşaatları](https://www.hakikat.com/hakikat-dergisi/260/evliya-i-kiram-kaddesallahu-esrarehum-hazeratinin-hatemul-evliya-hakkindaki-beyan-ve-ifsaatlari) kaynağından yararlanılmıştır[cite: 1, 2].\n"
             "* *Nursî, B. S.* (2014). İşaratü’l-İ’caz. Diyanet İşleri Başkanlığı Yayınları, Ankara.\n"
             "* *Nursî, B. S.* (2015). Sözler. Diyanet İşleri Başkanlığı Yayınları, Ankara.\n"
             "* *Nursî, B. S.* (2016). Mektubat. Diyanet İşleri Başkanlığı Yayınları, Ankara.\n\n"
@@ -459,7 +459,7 @@ elif secim in ["📂 Akademik Kaynakça", "📂 Academic Bibliography"]:
         st.header("📂 Primary References & Academic Bibliography")
         st.markdown(
             "### 1. Primary Published Collections:\n"
-            "* Utilized [Hakikat Magazine Resources](https://www.hakikat.com/hakikat-dergisi/260/evliya-i-kiram-kaddesallahu-esrarehum-hazeratinin-hatemul-evliya-hakkindaki-beyan-ve-ifsaatlari).\n"
+            "* Utilized [Hakikat Magazine Resources](https://www.hakikat.com/hakikat-dergisi/260/evliya-i-kiram-kaddesallahu-esrarehum-hazeratinin-hatemul-evliya-hakkindaki-beyan-ve-ifsaatlari)[cite: 1, 2].\n"
             "* *Nursi, B. S.* (2014). Isharat al-I'jaz. Presidency of Religious Affairs, Ankara.\n"
             "* *Nursi, B. S.* (2015). The Words. Presidency of Religious Affairs, Ankara.\n\n"
             "### 2. Academic Biographies & Research:\n"
@@ -477,7 +477,7 @@ elif secim in ["⚖️ Hukuki Uyarı & Kullanım Şartları", "⚖️ Legal Disc
         <div class='disclaimer-box'>
         <h3>YASAL UYARI VE KULLANIM SÖZLEŞMESİ</h3>
         <p>1. Bu yazılım ve içerikler <b>kesinlikle ticari amaçla kullanılamaz, satılamaz ve ticari kazanç vasıtası yapılamaz</b>.<br>
-        2. <a href="https://www.hakikat.com/hakikat-dergisi/260/evliya-i-kiram-kaddesallahu-esrarehum-hazeratinin-hatemul-evliya-hakkindaki-beyan-ve-ifsaatlari" target="_blank">Hakikat Dergisi</a> kaynaklarından faydalanılmış olup, telif hakları saklıdır.<br>
+        2. <a href="https://www.hakikat.com/hakikat-dergisi/260/evliya-i-kiram-kaddesallahu-esrarehum-hazeratinin-hatemul-evliya-hakkindaki-beyan-ve-ifsaatlari" target="_blank">Hakikat Dergisi</a> kaynaklarından faydalanılmış olup, telif hakları saklıdır[cite: 1, 2].<br>
         3. <b>Sitedeki hiçbir bilgi kopyalanamaz, çoğaltılamaz ve dışa aktarılamaz</b>. Sitede güçlü kopyalama engelleme korumaları etkindir.<br>
         4. Tüm hakları saklıdır.</p>
         </div>
@@ -488,7 +488,7 @@ elif secim in ["⚖️ Hukuki Uyarı & Kullanım Şartları", "⚖️ Legal Disc
         <div class='disclaimer-box'>
         <h3>LEGAL DISCLAIMER & COMMERCIAL PROHIBITION</h3>
         <p>1. This software and its contents <b>cannot be commercialized, sold, or used for profit under any circumstances</b>.<br>
-        2. <a href="https://www.hakikat.com/hakikat-dergisi/260/evliya-i-kiram-kaddesallahu-esrarehum-hazeratinin-hatemul-evliya-hakkindaki-beyan-ve-ifsaatlari" target="_blank">Hakikat Magazine</a> resources were utilized; all copyright rules apply.<br>
+        2. <a href="https://www.hakikat.com/hakikat-dergisi/260/evliya-i-kiram-kaddesallahu-esrarehum-hazeratinin-hatemul-evliya-hakkindaki-beyan-ve-ifsaatlari" target="_blank">Hakikat Magazine</a> resources were utilized; all copyright rules apply[cite: 1, 2].<br>
         3. <b>No information on this site can be copied, extracted, or reproduced</b>. Strict copy-protection scripts are enforced.<br>
         4. All rights reserved.</p>
         </div>
