@@ -118,6 +118,14 @@ if lang == "Türkçe":
         "**Kesinlikle ticareti yapılamaz, satılamaz ve ticari kazanç vasıtası yapılamaz.**\n\n"
         "Siteden hiçbir bilgi kopyalanamaz ve çoğaltılamaz."
     )
+    sleep_info = (
+        "💡 *Not:* Bu web uygulaması ücretsiz sunucularda barındırılmaktadır. "
+        "Uzun süre işlem yapılmadığında uygulama uyku moduna geçebilir "
+        "(ekranda 'Zzzz' simgesi çıkabilir).\n\n"
+        "💤 Eğer böyle bir ekranla karşılaşırsanız, ekranda beliren mavi renkli "
+        "*'Yes, get this app back up!'* butonuna tıklayın ve uygulamanın "
+        "yeniden uyanması için 15-30 saniye bekleyin."
+    )
     footer_text = "© 2026 Bediüzzaman İlim ve Kültür Portalı | Kesinlikle Ticareti Yapılamaz."
 else:
     title_text = "📚 Bediuzzaman Said Nursi Risale-i Nur & Biography Portal"
@@ -139,6 +147,14 @@ else:
         "**It cannot be commercialized, sold, or used for profit under any circumstances.**\n\n"
         "No information can be copied."
     )
+    sleep_info = (
+        "💡 *Note:* This web app is hosted on free servers. "
+        "It may go to sleep mode after a period of inactivity "
+        "(showing a 'Zzzz' screen).\n\n"
+        "💤 If you encounter this screen, click the blue "
+        "*'Yes, get this app back up!'* button and wait 15-30 seconds "
+        "for the app to wake up."
+    )
     footer_text = "© 2026 Bediuzzaman Knowledge Portal | Strictly Non-Commercial."
 
 # Başlık / Title Header
@@ -148,7 +164,9 @@ st.caption(caption_text)
 # Yan Menü Navigasyonu / Sidebar Navigation
 st.sidebar.title(nav_title)
 secim = st.sidebar.radio("Menü / Menu:", menu_options)
+
 st.sidebar.markdown("---")
+st.sidebar.info(sleep_info)
 st.sidebar.warning(legal_sidebar)
 
 # -----------------------------------------------------------------------------
@@ -447,7 +465,7 @@ elif secim in ["📂 Akademik Kaynakça", "📂 Academic Bibliography"]:
         st.header("📂 Temel Referanslar ve İlmî Kaynakça")
         st.markdown(
             "### 1. Resmi ve Birincil Özgün Neşriyat Kaynakları:\n"
-            "* [Hakikat Dergisi - Evliya-i Kiram Hazeratının Hatemü'l-Evliya Hakkındaki Beyan ve İfşaatları](https://www.hakikat.com/hakikat-dergisi/260/evliya-i-kiram-kaddesallahu-esrarehum-hazeratinin-hatemul-evliya-hakkindaki-beyan-ve-ifsaatlari) kaynağından yararlanılmıştır[cite: 1, 2].\n"
+            "* [Hakikat Dergisi - Evliya-i Kiram Hazeratının Hatemü'l-Evliya Hakkındaki Beyan ve İfşaatları](https://www.hakikat.com/hakikat-dergisi/260/evliya-i-kiram-kaddesallahu-esrarehum-hazeratinin-hatemul-evliya-hakkindaki-beyan-ve-ifsaatlari) kaynağından yararlanılmıştır.\n"
             "* *Nursî, B. S.* (2014). İşaratü’l-İ’caz. Diyanet İşleri Başkanlığı Yayınları, Ankara.\n"
             "* *Nursî, B. S.* (2015). Sözler. Diyanet İşleri Başkanlığı Yayınları, Ankara.\n"
             "* *Nursî, B. S.* (2016). Mektubat. Diyanet İşleri Başkanlığı Yayınları, Ankara.\n\n"
@@ -459,7 +477,7 @@ elif secim in ["📂 Akademik Kaynakça", "📂 Academic Bibliography"]:
         st.header("📂 Primary References & Academic Bibliography")
         st.markdown(
             "### 1. Primary Published Collections:\n"
-            "* Utilized [Hakikat Magazine Resources](https://www.hakikat.com/hakikat-dergisi/260/evliya-i-kiram-kaddesallahu-esrarehum-hazeratinin-hatemul-evliya-hakkindaki-beyan-ve-ifsaatlari)[cite: 1, 2].\n"
+            "* Utilized [Hakikat Magazine Resources](https://www.hakikat.com/hakikat-dergisi/260/evliya-i-kiram-kaddesallahu-esrarehum-hazeratinin-hatemul-evliya-hakkindaki-beyan-ve-ifsaatlari).\n"
             "* *Nursi, B. S.* (2014). Isharat al-I'jaz. Presidency of Religious Affairs, Ankara.\n"
             "* *Nursi, B. S.* (2015). The Words. Presidency of Religious Affairs, Ankara.\n\n"
             "### 2. Academic Biographies & Research:\n"
@@ -477,7 +495,7 @@ elif secim in ["⚖️ Hukuki Uyarı & Kullanım Şartları", "⚖️ Legal Disc
         <div class='disclaimer-box'>
         <h3>YASAL UYARI VE KULLANIM SÖZLEŞMESİ</h3>
         <p>1. Bu yazılım ve içerikler <b>kesinlikle ticari amaçla kullanılamaz, satılamaz ve ticari kazanç vasıtası yapılamaz</b>.<br>
-        2. <a href="https://www.hakikat.com/hakikat-dergisi/260/evliya-i-kiram-kaddesallahu-esrarehum-hazeratinin-hatemul-evliya-hakkindaki-beyan-ve-ifsaatlari" target="_blank">Hakikat Dergisi</a> kaynaklarından faydalanılmış olup, telif hakları saklıdır[cite: 1, 2].<br>
+        2. <a href="https://www.hakikat.com/hakikat-dergisi/260/evliya-i-kiram-kaddesallahu-esrarehum-hazeratinin-hatemul-evliya-hakkindaki-beyan-ve-ifsaatlari" target="_blank">Hakikat Dergisi</a> kaynaklarından faydalanılmış olup, telif hakları saklıdır.<br>
         3. <b>Sitedeki hiçbir bilgi kopyalanamaz, çoğaltılamaz ve dışa aktarılamaz</b>. Sitede güçlü kopyalama engelleme korumaları etkindir.<br>
         4. Tüm hakları saklıdır.</p>
         </div>
@@ -488,7 +506,7 @@ elif secim in ["⚖️ Hukuki Uyarı & Kullanım Şartları", "⚖️ Legal Disc
         <div class='disclaimer-box'>
         <h3>LEGAL DISCLAIMER & COMMERCIAL PROHIBITION</h3>
         <p>1. This software and its contents <b>cannot be commercialized, sold, or used for profit under any circumstances</b>.<br>
-        2. <a href="https://www.hakikat.com/hakikat-dergisi/260/evliya-i-kiram-kaddesallahu-esrarehum-hazeratinin-hatemul-evliya-hakkindaki-beyan-ve-ifsaatlari" target="_blank">Hakikat Magazine</a> resources were utilized; all copyright rules apply[cite: 1, 2].<br>
+        2. <a href="https://www.hakikat.com/hakikat-dergisi/260/evliya-i-kiram-kaddesallahu-esrarehum-hazeratinin-hatemul-evliya-hakkindaki-beyan-ve-ifsaatlari" target="_blank">Hakikat Magazine</a> resources were utilized; all copyright rules apply.<br>
         3. <b>No information on this site can be copied, extracted, or reproduced</b>. Strict copy-protection scripts are enforced.<br>
         4. All rights reserved.</p>
         </div>
